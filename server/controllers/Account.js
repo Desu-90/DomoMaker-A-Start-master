@@ -13,7 +13,7 @@ const login = (req, res) => {
   const pass = `${req.body.pass}`;
 
   if (!username || !pass) {
-    return res.status(400).json({ error: 'Wrong username or password!' });
+    return res.status(400).json({ error: 'All fields are required!' });
   }
 
   return Account.authenticate(username, pass, (err, account) => {
