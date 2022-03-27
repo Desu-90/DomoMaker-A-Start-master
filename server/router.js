@@ -8,7 +8,9 @@ const router = (app) => {
   app.post('/signup', controllers.Account.signup);
 
   app.get('/logout', controllers.Account.logout);
-  app.post('/maker', controllers.Domo.makerPage);
+
+  app.get('/maker', controllers.Domo.makerPage);
+  
   app.get('/', controllers.Account.loginPage);
 };
 
