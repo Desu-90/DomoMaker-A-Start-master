@@ -21,6 +21,8 @@ mongoose.connect(dbURI, (err) => {
   }
 });
 
+// This is being funky
+
 const app = express();
 
 app.use(helmet());
